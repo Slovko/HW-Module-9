@@ -221,11 +221,17 @@
   /* Телефон: одна картка в рядку */
   @media (max-width: 600px) {
     .navigation {
+      flex-wrap: wrap;
       justify-content: center;
       text-align: center;
     }
+
+    .logo {
+      width: 100%;
+    }
   
     .nav-links {
+      width: 100%;
       justify-content: center;
     }
   
@@ -237,8 +243,22 @@
       font-size: 30px;
     }
   
+    .catalog-section,
+    .product-grid,
+    .product-card,
+    .product-info {
+      width: 100%;
+      min-width: 0;
+    }
+
     .product-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .intro h1,
+    .catalog-section h2,
+    .product-card {
+      overflow-wrap: anywhere;
     }
   
     .product-card img {
