@@ -1,0 +1,124 @@
+/* Базові налаштування сторінки */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background: linear-gradient(135deg, #fff0b3, #ffd6e7);
+  }
+  
+  /* Розташовуємо картку по центру сторінки */
+  .page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  /* Картка профілю */
+  .profile-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 36px 28px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 3px solid #263238;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0 #263238;
+  }
+  
+  /* Круглий аватар з ініціалами */
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #263238;
+    border-radius: 50%;
+    background-color: #b9f2e6;
+    color: #263238;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  /* Короткий жартівливий підпис над ім’ям */
+  .profile-label {
+    margin: 0 0 10px;
+    color: #a33375;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Ім’я та професія */
+  h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+  }
+  
+  h2 {
+    margin: 0 0 18px;
+    color: #176b68;
+    font-size: 19px;
+  }
+  
+  /* Опис профілю */
+  .description {
+    margin: 0 0 24px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Кнопка-посилання */
+  .contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #263238;
+    border-radius: 12px;
+    background-color: #ffcf56;
+    color: #263238;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 #263238;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Колір кнопки змінюється при наведенні */
+  .contact-button:hover {
+    background-color: #ff9fcb;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #263238;
+  }
+
+/* Посилання назад до каталогу */
+.home-link {
+  display: block;
+  margin-top: 20px;
+  color: #176b68;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: #a33375;
+  text-decoration: underline;
+}
+  
+  /* Зменшуємо відступи на вузьких екранах */
+  @media (max-width: 420px) {
+    .profile-card {
+      padding: 28px 20px;
+    }
+  
+    h1 {
+      font-size: 26px;
+    }
+  }
